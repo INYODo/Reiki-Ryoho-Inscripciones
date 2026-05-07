@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiki Ryoho Inscripciones - Pedro Marano | Espacio INYO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Renglón 15: Tipografías y Base */
+        body { font-family: 'Montserrat', sans-serif; background-color: #fcfaf7; color: #1c1c1c; line-height: 1.8; }
+        .serif-italic { font-family: 'Libre Baskerville', serif; font-style: italic; }
+        
+        /* Renglón 20: Imágenes de Fondo con Overlay */
+        .hero-reiki { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero-pedro.jpg');
+            background-size: cover; background-position: center; min-height: 80vh;
+        }
+        .img-perfil { background-image: url('img/pedro-perfil.jpg'); background-size: cover; background-position: center; }
+
+        /* Renglón 30: Sistema de Acordeones Quirúrgicos */
+        .accordion-content { max-height: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0, 1, 0, 1); }
+        .accordion-item:focus-within .accordion-content { max-height: 2000px; transition: all 0.5s cubic-bezier(1, 0, 1, 0); }
+        .accordion-item:focus-within i.arrow { transform: rotate(180deg); }
+        
+        .btn-inyo { transition: all 0.3s ease; letter-spacing: 0.2em; }
+        .btn-inyo:hover { background-color: #2d2a28; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="hero-reiki flex flex-col justify-center items-center text-center p-6 text-white relative">
+        <div class="z-10 px-4">
+            <p class="text-stone-300 text-xs tracking-[0.6em] mb-6 font-bold uppercase italic">Linaje Gendai Reiki Ho</p>
+            <h1 class="text-5xl md:text-7xl font-light mb-8 serif-italic leading-tight">Reiki Ryoho Japonés</h1>
+            <div class="w-24 h-px bg-white/30 mx-auto my-10"></div>
+            <p class="text-lg md:text-2xl text-stone-200 max-w-3xl mx-auto font-light italic">
+                Seminarios presenciales de meditación y sanación dictados por Pedro Marano.
+            </p>
+            <div class="mt-12 inline-block border border-white/20 px-10 py-4 backdrop-blur-md">
+                <p class="text-xs uppercase tracking-[0.3em] font-bold">Sábado 18 y Domingo 19 de Julio, 2026</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="img-perfil aspect-[4/5] shadow-2xl border border-stone-200 order-2 md:order-1"></div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl md:text-4xl mb-8 serif-italic">Pedro Marano</h2>
+                <p class="text-stone-600 italic mb-8 leading-relaxed">
+                    Primer instructor argentino con grado de "Shihan" (Maestro) recibido en Japón de manos de Hiroshi Doi Sensei. Miembro activo de la Gendai Reiki Network, dedicado a la enseñanza desde el 2005.
+                </p>
+                <div class="space-y-6">
+                    <h3 class="text-[11px] uppercase tracking-widest font-bold text-stone-400 border-b pb-2">Linaje de Transparencia</h3>
+                    <ul class="text-sm text-stone-500 italic space-y-3">
+                        <li><strong>Mikao Usui</strong> (Fundador de Usui Reiki Ryoho Gakkai)</li>
+                        <li><strong>1º Kanichi Taketomi</strong> (3° Presidente de Usui Reiki Ryoho Gakkai)</li>
+                        <li><strong>2º Kimiko Koyama</strong> (6° Presidente de Usui Reiki Ryoho Gakkai)</li>
+                        <li><strong>3º Hiroshi Doi</strong> (Fundador de Gendai Reiki Ho)</li>
+                        <li><strong>4º Pedro Marano</strong> (Formado en Japón)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="niveles" class="py-24 px-6 bg-white border-y border-stone-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-center text-xs uppercase tracking-[0.4em] font-bold text-stone-400 mb-16 italic">Estructura de Seminarios y Valores</h2>
+            
+            <div class="space-y-6">
+                <div class="accordion-item border border-stone-200 bg-[#fcfaf7] outline-none group" tabindex="0">
+                    <div class="flex justify-between items-center p-8 cursor-pointer">
+                        <span class="serif-italic text-2xl">Shoden (Nivel 1)</span>
+                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 space-y-6 text-sm text-stone-600 italic">
+                            <p class="font-bold text-stone-900 underline">Sábado 18 de Julio | 10:00 a 14:00 hs.</p>
+                            <p>A través de Shoden te convertirás en una canal de Reiki puro. Aprenderás a utilizar la energía Reiki para purificar tu sistema nervioso y mente. Incorporarás técnicas de meditación, respiración, visualización, armonización de ambientes, tratamientos personales y para terceros. Conocerás a fondo la historia de Mikao Usui Sensei.</p>
+                            <p class="text-2xl font-bold text-stone-900">$118.000.-</p>
+                            <a href="https://wa.me/541176194825?text=Hola%20Gast%C3%B3n!%20Deseo%20reservar%20el%20Nivel%201%20SHODEN%20de%20Reiki%20con%20Pedro%20Marano.%20S%C3%A9%20que%20es%20el%20S%C3%A1bado%2018%20de%20Julio%20de%2010:00%20a%2014:00hs%20y%20el%20valor%20es%20$118.000." 
+                               class="inline-block bg-stone-900 text-white px-10 py-4 text-[10px] uppercase font-bold btn-inyo">Reservar Nivel 1</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-200 bg-[#fcfaf7] outline-none group" tabindex="0">
+                    <div class="flex justify-between items-center p-8 cursor-pointer">
+                        <span class="serif-italic text-2xl">Okuden (Nivel 2)</span>
+                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 space-y-6 text-sm text-stone-600 italic">
+                            <p class="font-bold text-stone-900 underline">Sábado 18 de Julio | 15:30 a 19:30 hs.</p>
+                            <p>Con Okuden se potencia el uso de Reiki. Se aprenden los símbolos, herramientas para enviar energía trascendiendo el tiempo y el espacio (pasado, futuro y distancia). Nuevas técnicas de desprogramación de hábitos nocivos y desintoxicación.</p>
+                            <p class="text-2xl font-bold text-stone-900">$148.000.-</p>
+                            <a href="https://wa.me/541176194825?text=Hola%20Gast%C3%B3n!%20Deseo%20reservar%20el%20Nivel%202%20OKUDEN%20de%20Reiki%20con%20Pedro%20Marano.%20S%C3%A9%20que%20es%20el%20S%C3%A1bado%2018%20de%20Julio%20de%2015:30%20a%2019:30hs%20y%20el%20valor%20es%20$148.000." 
+                               class="inline-block bg-stone-900 text-white px-10 py-4 text-[10px] uppercase font-bold btn-inyo">Reservar Nivel 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-900 bg-stone-50 outline-none group" tabindex="0">
+                    <div class="flex justify-between items-center p-8 cursor-pointer">
+                        <span class="serif-italic text-2xl font-bold">Pack Shoden + Okuden</span>
+                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 space-y-6 text-sm text-stone-600 italic">
+                            <p class="font-bold text-stone-900 underline">Jornada Completa Sábado 18/07 | 10:00 a 19:30 hs.</p>
+                            <p class="text-3xl font-bold text-stone-900">$228.000.-</p>
+                            <a href="https://wa.me/541176194825?text=Hola%20Gast%C3%B3n!%20Quiero%20la%20PROMO%20Pack%201%20+%202%20de%20Reiki.%20S%C3%A9%20que%20es%20el%20S%C3%A1bado%2018/07%20de%2010:00%20a%2019:30hs%20y%20el%20total%20es%20$228.000." 
+                               class="inline-block bg-stone-900 text-white px-10 py-4 text-[10px] uppercase font-bold btn-inyo">Aprovechar Promo 1+2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-200 bg-[#fcfaf7] outline-none group" tabindex="0">
+                    <div class="flex justify-between items-center p-8 cursor-pointer">
+                        <span class="serif-italic text-2xl">Shinpiden (Nivel 3)</span>
+                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 space-y-6 text-sm text-stone-600 italic">
+                            <p class="font-bold text-stone-900 underline">Domingo 19 de Julio | 10:00 a 14:00 hs.</p>
+                            <p>Llamado “Maestría Personal”. Se incorpora el último símbolo para aprender a resonar con Reiki en todo momento. Es el nivel más significativo a nivel espiritual, brindando una sensación de completitud y hogar.</p>
+                            <p class="text-2xl font-bold text-stone-900">$178.000.-</p>
+                            <a href="https://wa.me/541176194825?text=Hola%20Gast%C3%B3n!%20Me%20interesa%20el%20Nivel%203%20SHINPIDEN%20de%20Reiki.%20S%C3%A9%20que%20es%20el%20Domingo%2019/07%20de%2010:00%20a%2014:00hs%20y%20el%20valor%20es%20$178.000." 
+                               class="inline-block bg-stone-900 text-white px-10 py-4 text-[10px] uppercase font-bold btn-inyo">Reservar Nivel 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-2 border-stone-900 bg-white outline-none group" tabindex="0">
+                    <div class="flex justify-between items-center p-8 cursor-pointer bg-stone-900 text-white">
+                        <span class="serif-italic text-2xl">Formación Integral (1, 2 y 3)</span>
+                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="py-8 space-y-6 text-center">
+                            <p class="text-sm text-stone-500 italic">Sábado 18/07 (10 a 19:30) + Domingo 19/07 (10 a 14:00)</p>
+                            <p class="text-4xl font-bold text-stone-900">$358.000.-</p>
+                            <a href="https://wa.me/541176194825?text=Hola%20Gast%C3%B3n!%20Deseo%20inscribirme%20a%20la%20FORMACI%C3%93N%20COMPLETA%20de%20Reiki%20(1%2C%202%20y%203).%20S%C3%A9%20que%20la%20cursada%20es%20S%C3%A1bado%2018%20y%20Domingo%2019%20de%20Julio%20en%20horarios%20completos%20y%20el%20total%20es%20$358.000." 
+                               class="inline-block bg-stone-900 text-white px-12 py-5 text-[11px] uppercase font-bold btn-inyo">Reservar Formación Completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-[#fcfaf7]">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="serif-italic text-3xl text-center mb-16 underline decoration-stone-200 underline-offset-8">Conocimiento Fundamental</h3>
+            <div class="space-y-4">
+                
+                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
+                    <div class="flex justify-between items-center py-6 px-8 cursor-pointer">
+                        <span class="font-bold uppercase tracking-widest text-xs text-stone-700">¿Qué es Gendai Reiki Ho?</span>
+                        <i class="fa-solid fa-plus text-[10px] arrow"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 text-sm text-stone-600 italic space-y-4">
+                            <p>Reiki es un método que se transmite de Instructor a Alumno. No puede aprenderse a través de libros ni internet.</p>
+                            <p>Gendai Reiki Ho es la disciplina que Sensei Hiroshi Doi, creó combinando las técnicas de Dento Reiki (Reiki Tradicional de la Asociación fundada por Mikao Usui en 1922) con los aportes Occidentales que se realizaron a través de los años. Sensei Doi es el Presidente y Fundador de Gendai Reiki Ho, y además es el único miembro activo de Usui Reiki Ryoho Gakkai que enseña a personas occidentales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
+                    <div class="flex justify-between items-center py-6 px-8 cursor-pointer">
+                        <span class="font-bold uppercase tracking-widest text-xs text-stone-700">Beneficios de estas prácticas</span>
+                        <i class="fa-solid fa-plus text-[10px] arrow"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 text-sm text-stone-600 italic grid md:grid-cols-3 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-3 uppercase text-[10px] text-stone-900 underline">Físico:</h4>
+                                <p>Fortalece el sistema inmunológico, regula la presión arterial y el colesterol. Ayuda en la cicatrización y recuperación de cirugías. Disminuye dolores y reduce efectos negativos de medicamentos. Equilibra el sistema nervioso.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-3 uppercase text-[10px] text-stone-900 underline">Emocional:</h4>
+                                <p>Reduce el estrés y suaviza picos emocionales. Genera equilibrio interior, paz y bienestar. Sanación de viejas heridas afectivas. Estimula la creatividad y aporta claridad mental facilitando la concentración.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-3 uppercase text-[10px] text-stone-900 underline">Espiritual:</h4>
+                                <p>Amplía la Conciencia de la Universalidad. Aporta confianza en el proceso de la vida. Aumenta la capacidad de tomar responsabilidad de nuestros actos como creadores de nuestra vida. Ayuda a expandir Amor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
+                    <div class="flex justify-between items-center py-6 px-8 cursor-pointer">
+                        <span class="font-bold uppercase tracking-widest text-xs text-stone-700">Metodología de los Seminarios</span>
+                        <i class="fa-solid fa-plus text-[10px] arrow"></i>
+                    </div>
+                    <div class="accordion-content px-8">
+                        <div class="pb-8 text-sm text-stone-600 italic space-y-4">
+                            <p>Aprendizaje grupal sin cupo máximo. Se inicia con la parte teórica de encuadre, pero es en general práctico y vivencial. Las técnicas se practican en grupo para tener experiencias de conexión con el método.</p>
+                            <p>Todo lo aprendido está en los manuales oficiales de Hiroshi Doi (pueden solicitarse en cualquier idioma). Además se entrega el certificado con el aval de la asociación japonesa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border border-stone-900 bg-stone-900 text-white outline-none" tabindex="0">
+                    <div class="flex justify-between items-center py-6 px-8 cursor-pointer">
+                        <span class="font-bold uppercase tracking-[0.2em] text-xs">Gokuikaiden (Nivel 4 - Shihan)</span>
+                        <i class="fa-solid fa-plus text-[10px] arrow"></i>
+                    </div>
+                    <div class="accordion-content px-8 bg-white text-stone-600">
+                        <div class="py-8 text-sm italic space-y-4">
+                            <p>Entrenamiento flexible para Instructores. Se aprende las sintonizaciones de todos los niveles y se recibe la “iniciación integrada” que habilita a enseñar.</p>
+                            <p>Recibe los manuales actualizados, la conexión directa con Japón y el certificado de “Shihan en Gendai Reiki Ho”. Obtendrá el 5to lugar en el linaje sagrado tras Pedro Marano.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 bg-black text-white text-center italic">
+        <h2 class="text-4xl mb-12 uppercase font-bold tracking-tighter">Espacio INYO ☯️</h2>
+        <div class="border-t border-white/10 pt-16 max-w-4xl mx-auto">
+            <h3 class="text-[10px] uppercase tracking-[0.6em] text-stone-500 mb-10 font-bold">Navegación Ecosistema</h3>
+            <div class="flex flex-wrap justify-center gap-10 text-[10px] font-bold tracking-widest text-stone-400">
+                <a href="#" class="hover:text-white transition">HIIT + Calistenia</a>
+                <a href="#" class="hover:text-white transition">Zen Stretching</a>
+                <a href="#" class="hover:text-white transition">Yoga</a>
+                <a href="#" class="hover:text-white transition">Masaje Japonés</a>
+                <a href="#" class="hover:text-white transition font-bold text-white">Chamanismo</a>
+                <a href="#" class="hover:text-white transition font-bold text-white">Qigong</a>
+                <a href="#" class="hover:text-white transition">Acupuntura</a>
+            </div>
+            <p class="mt-20 text-[9px] text-stone-700 uppercase tracking-widest font-bold italic">© 2026 Reiki Ryoho Inscripciones | Pedro Marano Shihan</p>
+        </div>
+    </footer>
+
+</body>
+</html>
