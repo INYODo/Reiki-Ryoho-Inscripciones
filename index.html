@@ -12,14 +12,19 @@
         body { font-family: 'Montserrat', sans-serif; background-color: #fcfaf7; color: #1c1c1c; line-height: 1.8; }
         .serif-italic { font-family: 'Libre Baskerville', serif; font-style: italic; }
         
-        /* Renglón 20: Imágenes de Fondo con Overlay */
-        .hero-reiki { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero-pedro.png');
-            background-size: cover; background-position: center; min-height: 80vh;
+        /* Renglón 20: Imagen Hero Limpia (Sin overlay de texto) */
+        .hero-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .img-perfil { background-image: url('img/pedro-perfil.jpg'); background-size: cover; background-position: center; }
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-        /* Renglón 30: Sistema de Acordeones Quirúrgicos */
+        /* Renglón 30: Sistema de Acordeones */
         .accordion-content { max-height: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0, 1, 0, 1); }
         .accordion-item:focus-within .accordion-content { max-height: 2000px; transition: all 0.5s cubic-bezier(1, 0, 1, 0); }
         .accordion-item:focus-within i.arrow { transform: rotate(180deg); }
@@ -30,23 +35,29 @@
 </head>
 <body class="antialiased">
 
-    <header class="hero-reiki flex flex-col justify-center items-center text-center p-6 text-white relative">
-        <div class="z-10 px-4">
-            <p class="text-stone-300 text-xs tracking-[0.6em] mb-6 font-bold uppercase italic">Linaje Gendai Reiki Ho</p>
-            <h1 class="text-5xl md:text-7xl font-light mb-8 serif-italic leading-tight">Reiki Ryoho Japonés</h1>
-            <div class="w-24 h-px bg-white/30 mx-auto my-10"></div>
-            <p class="text-lg md:text-2xl text-stone-200 max-w-3xl mx-auto font-light italic">
-                Seminarios presenciales de meditación y sanación dictados por Pedro Marano.
+    <div class="hero-container shadow-2xl">
+        <img src="img/hero-pedro.png" alt="Reiki Pedro Marano" class="hero-img">
+    </div>
+
+    <section class="py-20 px-6 text-center bg-white border-b border-stone-100">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-stone-400 text-xs tracking-[0.6em] mb-6 font-bold uppercase italic">Linaje Gendai Reiki Ho</p>
+            <h1 class="text-4xl md:text-5xl font-light mb-8 serif-italic leading-tight text-stone-900">Reiki Ryoho Japonés</h1>
+            <div class="w-16 h-px bg-stone-200 mx-auto my-8"></div>
+            <p class="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto font-light italic">
+                Seminarios presenciales de meditación y sanación dictados por Pedro Marano. Formación tradicional y auténtica en Lanús.
             </p>
-            <div class="mt-12 inline-block border border-white/20 px-10 py-4 backdrop-blur-md">
-                <p class="text-xs uppercase tracking-[0.3em] font-bold">Sábado 18 y Domingo 19 de Julio, 2026</p>
+            <div class="mt-10 inline-block border border-stone-200 px-8 py-3">
+                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-stone-500">Sábado 18 y Domingo 19 de Julio, 2026</p>
             </div>
         </div>
-    </header>
+    </section>
 
     <section class="py-24 px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-20 items-center">
-            <div class="img-perfil aspect-[4/5] shadow-2xl border border-stone-200 order-2 md:order-1"></div>
+            <div class="aspect-[4/5] shadow-xl border border-stone-200 overflow-hidden order-2 md:order-1">
+                <img src="img/pedro-perfil.jpg" alt="Pedro Marano Shihan" class="w-full h-full object-cover">
+            </div>
             <div class="order-1 md:order-2">
                 <h2 class="text-3xl md:text-4xl mb-8 serif-italic">Pedro Marano</h2>
                 <p class="text-stone-600 italic mb-8 leading-relaxed">
@@ -201,7 +212,7 @@
                     <div class="accordion-content px-8">
                         <div class="pb-8 text-sm text-stone-600 italic space-y-4">
                             <p>Aprendizaje grupal sin cupo máximo. Se inicia con la parte teórica de encuadre, pero es en general práctico y vivencial. Las técnicas se practican en grupo para tener experiencias de conexión con el método.</p>
-                            <p>Todo lo aprendido está en los manuales oficiales de Hiroshi Doi (pueden solicitarse en cualquier idioma). Además se entrega el certificado con el aval de la asociación japonesa.</p>
+                            <p>Todo lo aprendido está en los manuales oficiales de Hiroshi Doi. Además se entrega el certificado con el aval de la asociación japonesa.</p>
                         </div>
                     </div>
                 </div>
