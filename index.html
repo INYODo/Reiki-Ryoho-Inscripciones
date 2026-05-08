@@ -41,9 +41,8 @@
 
         /* Renglón 50: Acordeones Quirúrgicos */
         .accordion-content { max-height: 0; overflow: hidden; transition: all 0.6s cubic-bezier(0, 1, 0, 1); }
-        .accordion-item:focus-within .accordion-content { max-height: 4000px; transition: all 0.6s cubic-bezier(1, 0, 1, 0); }
-        .accordion-item:focus-within i.arrow { transform: rotate(180deg); }
-        
+
+
         .btn-inyo { transition: all 0.3s ease; letter-spacing: 0.2em; }
         .btn-inyo:hover { background-color: #2d2a28; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         
@@ -196,13 +195,13 @@
             <h3 class="serif-italic text-4xl text-center mb-20 underline decoration-stone-200 underline-offset-[12px]">Conocimiento Fundamental</h3>
             <div class="space-y-6">
                 
-                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
-                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer">
+                <div class="border border-stone-200 bg-white overflow-hidden">
+                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer bg-white" onclick="toggleAccordion(this)">
                         <span class="font-bold uppercase tracking-widest text-sm text-stone-700">Reiki Original Japonés: Tradición y Linaje Directo</span>
-                        <i class="fa-solid fa-plus text-xs arrow transition-transform"></i>
+                        <i class="fa-solid fa-plus text-xs transition-transform duration-300 arrow"></i>
                     </div>
-                    <div class="accordion-content px-10">
-                        <div class="pb-10 text-stone-600 italic space-y-6">
+                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
+                        <div class="px-10 pb-10 text-stone-600 italic space-y-6">
                             <div class="video-wrapper">
                                 <iframe src="https://www.youtube.com/embed/XH8_cDr_0iw" frameborder="0" allowfullscreen></iframe>
                             </div>
@@ -211,52 +210,60 @@
                     </div>
                 </div>
 
-                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
-                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer">
+                <div class="border border-stone-200 bg-white overflow-hidden">
+                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer bg-white" onclick="toggleAccordion(this)">
                         <span class="font-bold uppercase tracking-widest text-sm text-stone-700">Beneficios y Mitos sobre la Sanación</span>
-                        <i class="fa-solid fa-plus text-xs arrow"></i>
+                        <i class="fa-solid fa-plus text-xs transition-transform duration-300 arrow"></i>
                     </div>
-                    <div class="accordion-content px-10">
-                        <div class="pb-10 text-stone-600 italic space-y-10">
+                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
+                        <div class="px-10 pb-10 text-stone-600 italic space-y-10">
                             <div class="video-wrapper">
                                 <iframe src="https://www.youtube.com/embed/36PRif9pB-M" frameborder="0" allowfullscreen></iframe>
                             </div>
-                            
-                            <div class="grid md:grid-cols-3 gap-10">
-                                <div>
-                                    <h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Físico</h4>
-                                    <p class="text-sm">Fortalece el sistema inmunológico, regula presión y colesterol. Ayuda en la recuperación post-quirúrgica y equilibra el sistema nervioso.</p>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Emocional</h4>
-                                    <p class="text-sm">Reduce el estrés, calma la ansiedad y ayuda a sanar heridas afectivas. Estimula la claridad mental y la concentración.</p>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Espiritual</h4>
-                                    <p class="text-sm">Amplía la Conciencia de la Universalidad y aporta confianza en el proceso de la vida, expandiendo la capacidad de Amor.</p>
-                                </div>
+                            <div class="grid md:grid-cols-3 gap-10 text-left">
+                                <div><h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Físico</h4><p class="text-sm">Fortalece el sistema inmunológico, regula presión y colesterol. Ayuda en la recuperación post-quirúrgica.</p></div>
+                                <div><h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Emocional</h4><p class="text-sm">Reduce el estrés, calma la ansiedad y ayuda a sanar heridas afectivas. Estimula la claridad mental.</p></div>
+                                <div><h4 class="font-bold mb-4 uppercase text-xs text-stone-900 border-b border-stone-100 pb-2">Espiritual</h4><p class="text-sm">Amplía la Conciencia de la Universalidad y aporta confianza en el proceso de la vida.</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item border border-stone-200 bg-white outline-none" tabindex="0">
-                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer">
+                <div class="border border-stone-200 bg-white overflow-hidden">
+                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer bg-white" onclick="toggleAccordion(this)">
                         <span class="font-bold uppercase tracking-widest text-sm text-stone-700">Metodología y Preparación</span>
-                        <i class="fa-solid fa-plus text-xs arrow"></i>
+                        <i class="fa-solid fa-plus text-xs transition-transform duration-300 arrow"></i>
                     </div>
-                    <div class="accordion-content px-10">
-                        <div class="pb-10 text-stone-600 italic space-y-8 text-center">
+                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
+                        <div class="px-10 pb-10 text-stone-600 italic space-y-8 text-center">
                             <p class="font-bold uppercase text-[10px] tracking-widest">Sobre la preparación previa:</p>
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/mU11AiDjfKo" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="w-12 h-px bg-stone-200 mx-auto"></div>
+                            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mU11AiDjfKo" frameborder="0" allowfullscreen></iframe></div>
                             <p class="font-bold uppercase text-[10px] tracking-widest">Sobre la cursada:</p>
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/J8SWyiu_pWs" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/J8SWyiu_pWs" frameborder="0" allowfullscreen></iframe></div>
                             <p class="max-w-2xl mx-auto text-sm">Se entrega manual oficial de Gendai Reiki Ho y certificado con aval del linaje japonés.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-stone-900 bg-stone-900 text-white overflow-hidden">
+                    <div class="flex justify-between items-center py-8 px-10 cursor-pointer" onclick="toggleAccordion(this)">
+                        <span class="font-bold uppercase tracking-[0.2em] text-xs">Gokuikaiden (Nivel 4 - Shihan)</span>
+                        <i class="fa-solid fa-plus text-xs transition-transform duration-300 arrow"></i>
+                    </div>
+                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out bg-white text-stone-600" style="max-height: 0;">
+                        <div class="p-10 text-sm italic space-y-4 text-left">
+                            <p>En Gokuikaiden proponemos un entrenamiento muy flexible en el que la persona va incorporando las herramientas necesarias para sentir seguridad con la tarea que va a emprender como Instructor.</p>
+                            <p>Aprendizaje individual. En este proceso el aspirante a instructor aprende las sintonizaciones de todos los niveles. Recibe la “iniciación integrada”, que habilita energéticamente a enseñar las técnicas.</p>
+                            <p>Recibe los manuales actualizados, la conexión directa con Japón y el certificado de “Shihan en Gendai Reiki Ho”, obteniendo el aval de maestría docente.</p>
+                            <p class="font-bold pt-4">Recibirá el 5to lugar en el linaje de esta sagrada tradición de maestros:</p>
+                            <ul class="pl-4 space-y-1">
+                                <li>1º Mikao Usui</li>
+                                <li>2º Kanichi Taketomi</li>
+                                <li>3º Kimiko Koyama</li>
+                                <li>4º Hiroshi Doi</li>
+                                <li>5º Pedro Marano</li>
+                                <li>6º Usted.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -330,6 +337,23 @@
             </div>
         </div>
     </footer>
-
+<script>
+        function toggleAccordion(element) {
+            const body = element.nextElementSibling;
+            const icon = element.querySelector('.arrow');
+            
+            if (body.style.maxHeight !== "0px" && body.style.maxHeight !== "") {
+                body.style.maxHeight = "0px";
+                icon.style.transform = "rotate(0deg)";
+            } else {
+                // Opcional: Cerrar otros acordeones al abrir uno nuevo
+                document.querySelectorAll('.accordion-body').forEach(el => el.style.maxHeight = "0px");
+                document.querySelectorAll('.arrow').forEach(el => el.style.transform = "rotate(0deg)");
+                
+                body.style.maxHeight = body.scrollHeight + "px";
+                icon.style.transform = "rotate(45deg)";
+            }
+        }
+    </script>
 </body>
 </html>
