@@ -166,8 +166,13 @@
     
     <section id="niveles" class="py-28 px-6 bg-white border-y border-stone-200">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-xs uppercase tracking-[0.5em] font-bold text-stone-400 mb-10 italic">Opciones de Formación y Reserva</h2>
+            <h2 class="text-xs uppercase tracking-[0.5em] font-bold text-stone-400 mb-4 italic">Opciones de Formación y Reserva</h2>
             
+            <!-- AVISO DE ATENCIÓN DIRECTO Y ANIMADO PARA DESPLEGAR VALORES -->
+            <div class="inline-flex items-center gap-2 bg-amber-100/90 text-amber-900 border border-amber-300/80 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest mb-10 shadow-sm animate-bounce">
+                <i class="fa-solid fa-hand-pointer text-amber-700"></i> <span>Toca sobre cada nivel para ver precios, días y horarios</span>
+            </div>
+
             <div class="mb-16">
                 <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-6 italic">¿Cómo se dividen los niveles?</p>
                 <div class="video-wrapper">
@@ -176,13 +181,16 @@
             </div>
 
             <div class="space-y-8 text-left">
-                <!-- Nivel 1: Shoden -->
+                <!-- Nivel 1: Shoden (Abierto por defecto para educar la vista del usuario) -->
                 <div class="border border-stone-200 bg-[#fcfaf7] overflow-hidden">
-                    <div class="flex justify-between items-center p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
-                        <span class="serif-italic text-3xl">Shoden (Nivel 1)</span>
-                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    <div class="flex justify-between items-center p-6 md:p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
+                        <span class="serif-italic text-2xl md:text-3xl">Shoden (Nivel 1)</span>
+                        <div class="flex items-center gap-2 bg-stone-900 text-white text-[10px] md:text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full shadow-md">
+                            <span>Ver Precios</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] arrow transition-transform duration-300" style="transform: rotate(180deg);"></i>
+                        </div>
                     </div>
-                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
+                    <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 1000px;">
                         <div class="px-8 pb-10 space-y-8 text-stone-600 italic">
                             <p class="font-bold text-stone-900 underline">Sábado 31 de Octubre | 10:30 a 15:00 hs.</p>
                             <p>A través de Shoden te convertirás en un canal de Reiki puro. Aprenderás a utilizar la energía Reiki para purificar tu sistema nervioso y mente. Incluye técnicas de meditación, respiración, visualización y armonización.</p>
@@ -194,9 +202,12 @@
 
                 <!-- Nivel 2: Okuden -->
                 <div class="border border-stone-200 bg-[#fcfaf7] overflow-hidden">
-                    <div class="flex justify-between items-center p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
-                        <span class="serif-italic text-3xl">Okuden (Nivel 2)</span>
-                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    <div class="flex justify-between items-center p-6 md:p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
+                        <span class="serif-italic text-2xl md:text-3xl">Okuden (Nivel 2)</span>
+                        <div class="flex items-center gap-2 bg-stone-900 text-white text-[10px] md:text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full shadow-md">
+                            <span>Ver Precios</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] arrow transition-transform duration-300"></i>
+                        </div>
                     </div>
                     <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
                         <div class="px-8 pb-10 space-y-8 text-stone-600 italic">
@@ -210,9 +221,12 @@
 
                 <!-- Pack 1+2 -->
                 <div class="border-2 border-stone-300 bg-stone-50 overflow-hidden">
-                    <div class="flex justify-between items-center p-10 cursor-pointer bg-stone-50" onclick="toggleAccordion(this)">
-                        <span class="serif-italic text-3xl font-bold">Pack Shoden + Okuden</span>
-                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    <div class="flex justify-between items-center p-6 md:p-10 cursor-pointer bg-stone-50" onclick="toggleAccordion(this)">
+                        <span class="serif-italic text-2xl md:text-3xl font-bold">Pack Shoden + Okuden</span>
+                        <div class="flex items-center gap-2 bg-stone-900 text-white text-[10px] md:text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full shadow-md">
+                            <span>Ver Precios</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] arrow transition-transform duration-300"></i>
+                        </div>
                     </div>
                     <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
                         <div class="px-10 pb-10 space-y-8 text-stone-600 italic">
@@ -225,9 +239,12 @@
 
                 <!-- Nivel 3: Shinpiden -->
                 <div class="border border-stone-200 bg-[#fcfaf7] overflow-hidden">
-                    <div class="flex justify-between items-center p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
-                        <span class="serif-italic text-3xl">Shinpiden (Nivel 3)</span>
-                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    <div class="flex justify-between items-center p-6 md:p-8 cursor-pointer bg-[#fcfaf7]" onclick="toggleAccordion(this)">
+                        <span class="serif-italic text-2xl md:text-3xl">Shinpiden (Nivel 3)</span>
+                        <div class="flex items-center gap-2 bg-stone-900 text-white text-[10px] md:text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full shadow-md">
+                            <span>Ver Precios</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] arrow transition-transform duration-300"></i>
+                        </div>
                     </div>
                     <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
                         <div class="px-8 pb-10 space-y-8 text-stone-600 italic">
@@ -241,9 +258,12 @@
 
                 <!-- Formación Integral -->
                 <div class="border-4 border-stone-900 bg-white overflow-hidden">
-                    <div class="flex justify-between items-center p-10 cursor-pointer bg-stone-900 text-white" onclick="toggleAccordion(this)">
-                        <span class="serif-italic text-4xl">Formación Integral (1, 2 y 3)</span>
-                        <i class="fa-solid fa-chevron-down text-xs arrow transition-transform"></i>
+                    <div class="flex justify-between items-center p-6 md:p-10 cursor-pointer bg-stone-900 text-white" onclick="toggleAccordion(this)">
+                        <span class="serif-italic text-2xl md:text-4xl">Formación Integral (1, 2 y 3)</span>
+                        <div class="flex items-center gap-2 bg-amber-400 text-stone-900 text-[10px] md:text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full shadow-md">
+                            <span>Ver Precios</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] arrow transition-transform duration-300"></i>
+                        </div>
                     </div>
                     <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out bg-white" style="max-height: 0;">
                         <div class="py-12 px-10 space-y-10 text-center italic">
@@ -437,14 +457,20 @@
             
             if (body.style.maxHeight !== "0px" && body.style.maxHeight !== "") {
                 body.style.maxHeight = "0px";
-                icon.style.transform = "rotate(0deg)";
+                if(icon) icon.style.transform = "rotate(0deg)";
             } else {
                 // Opcional: Cerrar otros acordeones al abrir uno nuevo
                 document.querySelectorAll('.accordion-body').forEach(el => el.style.maxHeight = "0px");
                 document.querySelectorAll('.arrow').forEach(el => el.style.transform = "rotate(0deg)");
                 
                 body.style.maxHeight = body.scrollHeight + "px";
-                icon.style.transform = "rotate(45deg)";
+                if(icon) {
+                    if (icon.classList.contains('fa-plus')) {
+                        icon.style.transform = "rotate(45deg)";
+                    } else {
+                        icon.style.transform = "rotate(180deg)";
+                    }
+                }
             }
         }
     </script>
